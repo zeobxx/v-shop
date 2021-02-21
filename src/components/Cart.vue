@@ -1,13 +1,13 @@
 <template>
   <div>   
     <b-container >
-      <b-row padding-3>
+      <b-row >
         <b-col>
-          <h2>LIGHT STICK</h2>
+          <h2 style="padding-top:30px;">LIGHT STICK</h2>
         </b-col>
       </b-row>
 
-      <b-row >
+      <b-row style="padding-top:30px;">
         <b-col v-for="product in products" :key="product.id">
 
           <b-card :title="product.name" :img-src="require(`@/assets/p${product.id}.jpeg`)" img-alt="Card image" img-left class="mb-3">
@@ -34,13 +34,13 @@
       </b-row>
 
       <b-row>
-        <b-col>
+        <b-col style="padding-top:30px;">
           <h2>Shopping Cart</h2>
         </b-col>
       </b-row>
 
       <b-row>
-        <b-col>
+        <b-col style="padding-top:30px;">
           <b-table bordered hover :items="cart" :fields="fields">
             <template slot="#" slot-scope="data">
               {{ data.index + 1 }}
