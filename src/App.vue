@@ -9,11 +9,12 @@
 <script>
 import Cart from './components/Cart'
 
+
 export default {
   name: 'app',
   components: {
     Cart
-  }
+  },
 }
 </script>
 
@@ -23,7 +24,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #172c019d;
+  background-color: blanchedalmond;
 }
 </style>
